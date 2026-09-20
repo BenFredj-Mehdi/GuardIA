@@ -1,0 +1,105 @@
+[
+  {
+    "id": "RM-101",
+    "name": "Amphitheater A",
+    "building": "Main Building",
+    "floor": "Ground Floor",
+    "capacity": 180,
+    "occupancy": 142,
+    "type": "Lecture Hall",
+    "schedule": [
+      { "time": "08:00 - 10:00", "course": "Algorithms & Complexity", "instructor": "Dr. Sarah Nassim" },
+      { "time": "10:15 - 12:15", "course": "Linear Algebra II", "instructor": "Prof. Marc Oliveira" },
+      { "time": "14:00 - 16:00", "course": "Intro to AI Systems", "instructor": "Dr. Leila Amrani" }
+    ]
+  },
+  {
+    "id": "RM-204",
+    "name": "Lab Building — Room 204",
+    "building": "Lab Building",
+    "floor": "2nd Floor",
+    "capacity": 40,
+    "occupancy": 38,
+    "type": "Computer Lab",
+    "schedule": [
+      { "time": "09:00 - 11:00", "course": "Embedded Systems Lab", "instructor": "Dr. Youssef Baraka" },
+      { "time": "13:00 - 15:00", "course": "Network Security Lab", "instructor": "Prof. Ana Kovac" }
+    ]
+  },
+  {
+    "id": "RM-315",
+    "name": "Corridor A Study Room",
+    "building": "Main Building",
+    "floor": "3rd Floor",
+    "capacity": 25,
+    "occupancy": 6,
+    "type": "Study Room",
+    "schedule": [
+      { "time": "11:00 - 13:00", "course": "Open Study Session", "instructor": "—" }
+    ]
+  },
+  {
+    "id": "RM-B12",
+    "name": "Mechanical Workshop B12",
+    "building": "Engineering Wing",
+    "floor": "Basement",
+    "capacity": 30,
+    "occupancy": 21,
+    "type": "Workshop",
+    "schedule": [
+      { "time": "08:30 - 11:30", "course": "Thermodynamics Practicum", "instructor": "Dr. Hugo Ferreira" },
+      { "time": "13:30 - 16:30", "course": "CAD & Manufacturing", "instructor": "Prof. Wei Zhang" }
+    ]
+  },
+  {
+    "id": "RM-402",
+    "name": "Design Studio 402",
+    "building": "Architecture Building",
+    "floor": "4th Floor",
+    "capacity": 35,
+    "occupancy": 33,
+    "type": "Studio",
+    "schedule": [
+      { "time": "09:00 - 12:00", "course": "Urban Planning Studio", "instructor": "Dr. Camille Rousseau" },
+      { "time": "14:00 - 17:00", "course": "Architectural Theory", "instructor": "Prof. Idris Osei" }
+    ]
+  },
+  {
+    "id": "RM-118",
+    "name": "Business Case Room 118",
+    "building": "Main Building",
+    "floor": "1st Floor",
+    "capacity": 60,
+    "occupancy": 12,
+    "type": "Seminar Room",
+    "schedule": [
+      { "time": "10:00 - 12:00", "course": "Strategic Management", "instructor": "Prof. Grace Okafor" }
+    ]
+  },
+  {
+    "id": "RM-220",
+    "name": "Electronics Lab 220",
+    "building": "Lab Building",
+    "floor": "2nd Floor",
+    "capacity": 32,
+    "occupancy": 30,
+    "type": "Computer Lab",
+    "schedule": [
+      { "time": "08:00 - 10:00", "course": "Digital Circuit Design", "instructor": "Dr. Peter Lindgren" },
+      { "time": "15:00 - 17:00", "course": "Signal Processing Lab", "instructor": "Prof. Nadia Choudhury" }
+    ]
+  },
+  {
+    "id": "RM-GYM",
+    "name": "Gymnasium Main Court",
+    "building": "Sports Complex",
+    "floor": "Ground Floor",
+    "capacity": 250,
+    "occupancy": 45,
+    "type": "Sports Facility",
+    "schedule": [
+      { "time": "07:00 - 09:00", "course": "Morning Fitness Program", "instructor": "Coach Ben Talbi" },
+      { "time": "17:00 - 19:00", "course": "Varsity Basketball Practice", "instructor": "Coach Ben Talbi" }
+    ]
+  }
+]

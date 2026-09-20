@@ -1,0 +1,18 @@
+[
+  { "id": "STU-20481", "name": "Amina El Fassi", "class": "CS-3A", "major": "Computer Science", "year": "3rd Year", "attendance": 96, "status": "Active", "email": "amina.elfassi@u-ignis.edu" },
+  { "id": "STU-20482", "name": "Yanis Bouzid", "class": "CS-3A", "major": "Computer Science", "year": "3rd Year", "attendance": 89, "status": "Active", "email": "yanis.bouzid@u-ignis.edu" },
+  { "id": "STU-20483", "name": "Lina Torres", "class": "ME-2B", "major": "Mechanical Engineering", "year": "2nd Year", "attendance": 78, "status": "At Risk", "email": "lina.torres@u-ignis.edu" },
+  { "id": "STU-20484", "name": "Karim Haddad", "class": "EE-1A", "major": "Electrical Engineering", "year": "1st Year", "attendance": 92, "status": "Active", "email": "karim.haddad@u-ignis.edu" },
+  { "id": "STU-20485", "name": "Sofia Marchetti", "class": "BA-4C", "major": "Business Administration", "year": "4th Year", "attendance": 99, "status": "Active", "email": "sofia.marchetti@u-ignis.edu" },
+  { "id": "STU-20486", "name": "Noah Whitfield", "class": "CS-3A", "major": "Computer Science", "year": "3rd Year", "attendance": 65, "status": "At Risk", "email": "noah.whitfield@u-ignis.edu" },
+  { "id": "STU-20487", "name": "Ines Belkacem", "class": "AR-2A", "major": "Architecture", "year": "2nd Year", "attendance": 94, "status": "Active", "email": "ines.belkacem@u-ignis.edu" },
+  { "id": "STU-20488", "name": "Marcus Lindqvist", "class": "ME-2B", "major": "Mechanical Engineering", "year": "2nd Year", "attendance": 88, "status": "Active", "email": "marcus.lindqvist@u-ignis.edu" },
+  { "id": "STU-20489", "name": "Fatima Zahra Idrissi", "class": "EE-1A", "major": "Electrical Engineering", "year": "1st Year", "attendance": 97, "status": "Active", "email": "fatima.idrissi@u-ignis.edu" },
+  { "id": "STU-20490", "name": "Diego Ramirez", "class": "BA-4C", "major": "Business Administration", "year": "4th Year", "attendance": 71, "status": "At Risk", "email": "diego.ramirez@u-ignis.edu" },
+  { "id": "STU-20491", "name": "Chloe Dubois", "class": "AR-2A", "major": "Architecture", "year": "2nd Year", "attendance": 91, "status": "Active", "email": "chloe.dubois@u-ignis.edu" },
+  { "id": "STU-20492", "name": "Tarek Mansour", "class": "CS-3A", "major": "Computer Science", "year": "3rd Year", "attendance": 84, "status": "Active", "email": "tarek.mansour@u-ignis.edu" },
+  { "id": "STU-20493", "name": "Hana Kobayashi", "class": "ME-2B", "major": "Mechanical Engineering", "year": "2nd Year", "attendance": 95, "status": "Active", "email": "hana.kobayashi@u-ignis.edu" },
+  { "id": "STU-20494", "name": "Oumar Diallo", "class": "EE-1A", "major": "Electrical Engineering", "year": "1st Year", "attendance": 60, "status": "At Risk", "email": "oumar.diallo@u-ignis.edu" },
+  { "id": "STU-20495", "name": "Elena Popescu", "class": "BA-4C", "major": "Business Administration", "year": "4th Year", "attendance": 93, "status": "Active", "email": "elena.popescu@u-ignis.edu" },
+  { "id": "STU-20496", "name": "Adam Cherif", "class": "AR-2A", "major": "Architecture", "year": "2nd Year", "attendance": 90, "status": "Active", "email": "adam.cherif@u-ignis.edu" }
+]

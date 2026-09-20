@@ -1,0 +1,10 @@
+[
+  { "id": "CAM-01", "location": "Main Entrance", "zone": "Perimeter", "source": null, "status": "online" },
+  { "id": "CAM-02", "location": "Library", "zone": "Academic", "source": null, "status": "online" },
+  { "id": "CAM-03", "location": "Parking Lot", "zone": "Perimeter", "source": null, "status": "online" },
+  { "id": "CAM-04", "location": "Corridor A", "zone": "Main Building", "source": null, "status": "online" },
+  { "id": "CAM-05", "location": "Cafeteria", "zone": "Common Area", "source": null, "status": "online" },
+  { "id": "CAM-06", "location": "Gymnasium", "zone": "Sports Complex", "source": null, "status": "online" },
+  { "id": "CAM-07", "location": "Lab Building", "zone": "Academic", "source": null, "status": "online" },
+  { "id": "CAM-08", "location": "Rear Exit", "zone": "Perimeter", "source": null, "status": "online" }
+]

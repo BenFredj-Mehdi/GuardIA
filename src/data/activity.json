@@ -1,0 +1,9 @@
+[
+  { "id": 1, "type": "system", "message": "GuardIA system health check completed — all 8 nodes operational.", "time": "2 min ago" },
+  { "id": 2, "type": "attendance", "message": "Attendance sync completed for CS-3A (Algorithms & Complexity).", "time": "18 min ago" },
+  { "id": 3, "type": "access", "message": "Badge access granted — Main Entrance, Staff ID 4471.", "time": "34 min ago" },
+  { "id": 4, "type": "system", "message": "Scheduled camera calibration completed for Corridor A and Lab Building.", "time": "1 hr ago" },
+  { "id": 5, "type": "enrollment", "message": "New student profile created — Fatima Zahra Idrissi (EE-1A).", "time": "2 hr ago" },
+  { "id": 6, "type": "access", "message": "Badge access granted — Rear Exit, Staff ID 3092.", "time": "3 hr ago" },
+  { "id": 7, "type": "system", "message": "Nightly backup of platform records completed successfully.", "time": "6 hr ago" }
+]
