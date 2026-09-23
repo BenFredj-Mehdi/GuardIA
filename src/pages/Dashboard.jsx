@@ -7,6 +7,7 @@ import GlassCard from '../components/ui/GlassCard';
 import students from '../data/students.json';
 import classrooms from '../data/classrooms.json';
 import activity from '../data/activity.json';
+import cameras from '../data/cameras.json';
 import { useAuth } from '../context/AuthContext';
 
 const activityIcon = {
@@ -23,6 +24,7 @@ export default function Dashboard() {
   );
   const totalOccupancy = classrooms.reduce((sum, c) => sum + c.occupancy, 0);
   const totalCapacity = classrooms.reduce((sum, c) => sum + c.capacity, 0);
+  const activeAlerts = cameras.filter((c) => c.alert).length;
 
   return (
     <>
@@ -59,8 +61,12 @@ export default function Dashboard() {
           <StatCard
             icon={ShieldAlert}
             label="Security Alerts Today"
-            value="0"
-            trend={{ positive: true, value: 'Nominal', label: 'GuardIA status' }}
+            value={String(activeAlerts)}
+            trend={
+              activeAlerts > 0
+                ? { positive: false, value: 'Action needed', label: 'GuardIA status' }
+                : { positive: true, value: 'Nominal', label: 'GuardIA status' }
+            }
             glow="red"
             delay={0.15}
           />

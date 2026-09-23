@@ -1,13 +1,27 @@
-import { ShieldCheck } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { ShieldCheck, Wind, AlertOctagon, ArrowUpRight } from 'lucide-react';
 import GlassCard from '../ui/GlassCard';
 
+const severityStyles = {
+  yellow: {
+    icon: Wind,
+    iconWrap: 'bg-amber-400/15 text-amber-300 border-amber-400/30',
+    border: 'border-amber-400/25 hover:border-amber-400/50',
+    dot: 'bg-amber-400',
+  },
+  red: {
+    icon: AlertOctagon,
+    iconWrap: 'bg-rose-500/15 text-rose-300 border-rose-500/30',
+    border: 'border-rose-500/25 hover:border-rose-500/50',
+    dot: 'bg-rose-500',
+  },
+};
+
 /**
- * Ready to receive real-time alerts once AI inference is wired up.
- * Feed it objects like:
- * { id, severity: 'critical'|'warning'|'info', type: 'fire'|'fall'|'fight'|'intrusion',
- *   location, time, snapshot }
+ * Real-time alert feed. Each entry links back to the camera that
+ * triggered it — selecting one expands that tile in the grid above.
  */
-export default function AlertsPanel({ alerts = [] }) {
+export default function AlertsPanel({ alerts = [], onSelect, activeCameraId }) {
   return (
     <GlassCard hover={false} className="flex h-full flex-col p-5">
       <div className="flex items-center justify-between mb-4">
@@ -31,14 +45,42 @@ export default function AlertsPanel({ alerts = [] }) {
         </div>
       ) : (
         <div className="space-y-2.5 overflow-y-auto">
-          {alerts.map((alert) => (
-            <div key={alert.id} className="rounded-xl border border-white/[0.06] bg-white/[0.03] p-3">
-              <p className="text-xs font-medium text-slate-200">{alert.type}</p>
-              <p className="text-[11px] text-slate-500 mt-0.5">
-                {alert.location} · {alert.time}
-              </p>
-            </div>
-          ))}
+          {alerts.map((alert, i) => {
+            const style = severityStyles[alert.severity] || severityStyles.red;
+            const Icon = style.icon;
+            const isActive = activeCameraId === alert.cameraId;
+            return (
+              <motion.button
+                key={alert.id}
+                initial={{ opacity: 0, x: 8 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.35, delay: i * 0.06 }}
+                onClick={() => onSelect?.(alert.cameraId)}
+                className={`group w-full rounded-xl border bg-white/[0.03] p-3 text-left transition-colors ${style.border} ${
+                  isActive ? 'ring-1 ring-white/30' : ''
+                }`}
+              >
+                <div className="flex items-start gap-2.5">
+                  <div className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-lg border ${style.iconWrap}`}>
+                    <Icon size={13} />
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <div className="flex items-center gap-1.5">
+                      <span className={`h-1.5 w-1.5 rounded-full ${style.dot} animate-pulse-dot`} />
+                      <p className="text-xs font-semibold text-slate-100 truncate">{alert.label}</p>
+                    </div>
+                    <p className="text-[11px] text-slate-500 mt-0.5">
+                      {alert.location} · {alert.time}
+                    </p>
+                  </div>
+                  <ArrowUpRight
+                    size={13}
+                    className="mt-0.5 shrink-0 text-slate-600 transition-colors group-hover:text-slate-300"
+                  />
+                </div>
+              </motion.button>
+            );
+          })}
         </div>
       )}
     </GlassCard>

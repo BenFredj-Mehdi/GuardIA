@@ -1,10 +1,79 @@
 [
-  { "id": "CAM-01", "location": "Main Entrance", "zone": "Perimeter", "source": null, "status": "online" },
-  { "id": "CAM-02", "location": "Library", "zone": "Academic", "source": null, "status": "online" },
-  { "id": "CAM-03", "location": "Parking Lot", "zone": "Perimeter", "source": null, "status": "online" },
-  { "id": "CAM-04", "location": "Corridor A", "zone": "Main Building", "source": null, "status": "online" },
-  { "id": "CAM-05", "location": "Cafeteria", "zone": "Common Area", "source": null, "status": "online" },
-  { "id": "CAM-06", "location": "Gymnasium", "zone": "Sports Complex", "source": null, "status": "online" },
-  { "id": "CAM-07", "location": "Lab Building", "zone": "Academic", "source": null, "status": "online" },
-  { "id": "CAM-08", "location": "Rear Exit", "zone": "Perimeter", "source": null, "status": "online" }
+  {
+    "id": "CAM-01",
+    "location": "Main Entrance",
+    "zone": "Perimeter",
+    "mediaType": "image",
+    "source": "/cameras/01-main-entrance.png",
+    "status": "online"
+  },
+  {
+    "id": "CAM-02",
+    "location": "Library",
+    "zone": "Academic",
+    "mediaType": "image",
+    "source": "/cameras/02-library.png",
+    "status": "online"
+  },
+  {
+    "id": "CAM-03",
+    "location": "Parking Lot",
+    "zone": "Perimeter",
+    "mediaType": "image",
+    "source": "/cameras/03-parking-lot.png",
+    "status": "online"
+  },
+  {
+    "id": "CAM-04",
+    "location": "Corridor A",
+    "zone": "Main Building",
+    "mediaType": "video",
+    "source": "/cameras/04-corridor-a-fall-detection.mp4",
+    "status": "online",
+    "alert": {
+      "type": "fall",
+      "label": "Fall Detected",
+      "severity": "red",
+      "loop": false,
+      "endImage": "/cameras/fall-alert-mockup.png"
+    }
+  },
+  {
+    "id": "CAM-05",
+    "location": "Cafeteria",
+    "zone": "Common Area",
+    "mediaType": "image",
+    "source": "/cameras/05-cafeteria.png",
+    "status": "online"
+  },
+  {
+    "id": "CAM-06",
+    "location": "Gymnasium",
+    "zone": "Sports Complex",
+    "mediaType": "image",
+    "source": "/cameras/06-gymnasium.png",
+    "status": "online"
+  },
+  {
+    "id": "CAM-07",
+    "location": "Lab Building",
+    "zone": "Academic",
+    "mediaType": "video",
+    "source": "/cameras/07-lab-building-gas-detection.mp4",
+    "status": "online",
+    "alert": {
+      "type": "gas",
+      "label": "Gas Detected",
+      "severity": "yellow",
+      "loop": true
+    }
+  },
+  {
+    "id": "CAM-08",
+    "location": "Rear Exit",
+    "zone": "Perimeter",
+    "mediaType": "image",
+    "source": "/cameras/08-rear-exit.png",
+    "status": "online"
+  }
 ]

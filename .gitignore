@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Raw source footage — cleaned/renamed copies already live in public/cameras
+Demo_material/
